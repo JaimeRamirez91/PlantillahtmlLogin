@@ -1,0 +1,357 @@
+/* =================================== */
+/*	Basic Style 
+/* =================================== */
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+	font-size: 13px;
+    color: #6a737b;
+
+
+}
+/*ocultar Scroll*/
+html,
+body
+{overflow-y: hidden;}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure, p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+	
+
+}
+
+iframe {
+    border: 0;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: whitesmoke;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+   clear: both;
+}
+ 
+.clear {
+   *zoom: 1;
+}
+
+span.color {
+	color: #0feb9e;
+}
+
+body > section,
+.footer {
+	padding: 70px 0;
+}
+
+.sec-title {}
+
+.sec-title h2 {
+  color: #0eb493;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sec-sub-title {
+	margin: 35px 0 45px;
+}
+
+.sec-sub-title p {
+	font-weight: 600;
+	line-height: 24px;
+	font-size: 18px;
+	color: #5b646e;
+}
+
+.devider {
+  margin-top: 30px;
+}
+
+.devider i {
+  color: #cccccc;
+}
+
+.devider:before,
+.devider:after {
+  content: "______________________";
+  color: #e6e8ea;
+  position: relative;
+  bottom: 6px;
+}
+
+.devider:before {
+  right: 10px;
+}
+
+.devider:after {
+  left: 10px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+#preloader {
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+}
+
+#preloader > img {
+  left: 47%;
+  position: absolute;
+  top: 48%;
+}
+
+
+/*=========================================
+	Header
+==========================================*/
+
+#navigation {
+  background-color: #00695c;
+  border: 0 none;
+  margin: 0;
+}
+
+.navbar-toggle i {
+	color:#f2f2f2;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-nav li a {
+	border-top: 1px solid transparent;
+}
+
+.navbar-nav li a.current{
+  background-color: #388e3c;
+  color: white;
+}
+
+.navbar-nav li a:focus{
+  background-color: rgba(0,0,0,.2);
+  color: white;
+}
+.navbar-nav li a:hover {
+	background-color: rgba(0,0,0,.2);
+	border-top: 1px solid #1F618D;
+	color: white;
+}
+.active{
+  background-color: #43a047  ;
+  color: white;
+}
+
+/*
+***********Login**********************
+*/
+.row{
+    display: flex;
+    justify-content: center;
+}
+.panel{
+   border: none;
+}
+.panel-default>.panel-heading{
+    color: white;
+    background-color: #00a7d0;
+   /* border-color: #ddd;*/
+    text-align: center;
+}
+.centrarCaja{
+    top: 25%;
+}
+
+/*----secctions------*//*
+#features{
+    background-image: url("../img/fondo-lg.jpg") !important;
+}
+#current{
+
+    height: background-size;
+    position: relative;
+    background-color: #00b3ee;
+    margin: 0 auto;
+}
+
+#heder{
+    height: 0%;
+}
+#content{
+    height: 65%;
+    background-color: red;
+}
+#footer{
+    height: 5%;
+    background-color: white;
+}*/
+@media (min-width: 700px){
+    /*----secctions------*/
+    #current{
+
+        height: 660px;
+        position: relative;
+        background-color: #00b3ee;
+        margin: 0 auto;
+    }
+
+    #heder-current{
+        height: 0%;
+    }
+    #content-current{
+        height: 95%;
+        background-color: red;
+    }
+    #footer-current{
+        height: 5%;
+        background-color: white;
+    }
+
+    /*features*/
+    #features{
+       /* height: 660px;*/
+        position: relative;
+        margin: 0 auto;
+        background-image: url("../img/fondo-lg.jpg") !important;
+
+    }
+    #heder-login{
+        height: 0%;
+    }
+    #content-login{
+        height: 95%;
+        background-image: url("../img/fondo-lg.jpg") !important;
+    }
+    #footer-login{
+        height: 5%;
+        background-color:red;
+    }
+
+
+
+}
+
+@media (min-width: 10px){
+    /*----secctions------*/
+    #current{
+
+        height: 660px;
+        position: relative;
+        background-color: #00b3ee;
+        margin: 0 auto;
+    }
+
+    #heder-current{
+        height: 0%;
+    }
+    #content-current{
+        height: 95%;
+        background-color: red;
+    }
+    #footer-current{
+        height: 5%;
+        background-color: white;
+    }
+
+    /*features*/
+    #features{
+        height: 660px;
+        position: relative;
+        margin: 0 auto;
+        background-image: url("../img/fondo-lg.jpg") !important;
+
+    }
+    #heder-login{
+        height: 0%;
+    }
+    #content-login{
+        height: 95%;
+        background-image: url("../img/fondo-lg.jpg") !important;
+    }
+    #footer-login{
+        height: 6%;
+        background-color:#004D40;
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+}
+#footer-login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+/*prueba*/
+.glyphico {
+   margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+
+
+
+
+
+
+
