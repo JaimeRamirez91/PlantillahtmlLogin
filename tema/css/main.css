@@ -2,18 +2,19 @@
 /*	Basic Style 
 /* =================================== */
 body {
-    background-color: #fff;
+    background: #405758 ;
     font-family: 'Open Sans', sans-serif;
     line-height: 21px;
-	font-size: 13px;
+	  font-size: 13px;
     color: #6a737b;
 
 
 }
 /*ocultar Scroll*/
+
 html,
-body
-{overflow-y: hidden;}
+body{overflow-y: hidden;}
+
 ol, ul {
     margin: 0;
     padding: 0;
@@ -140,9 +141,10 @@ body > section,
 ==========================================*/
 
 #navigation {
-  background-color: #00695c;
+  background-color:#067C9E;
   border: 0 none;
   margin: 0;
+
 }
 
 .navbar-toggle i {
@@ -150,7 +152,7 @@ body > section,
 }
 
 .navbar-brand {
-  padding: 0;
+  padding: 0 auto; 
 }
 
 .navbar-nav li a {
@@ -172,7 +174,7 @@ body > section,
 	color: white;
 }
 .active{
-  background-color: #43a047  ;
+ /* background-color: #09935E;*/
   color: white;
 }
 
@@ -195,125 +197,78 @@ body > section,
 .centrarCaja{
     top: 25%;
 }
-
-/*----secctions------*//*
-#features{
-    background-image: url("../img/fondo-lg.jpg") !important;
+.jumbotron{
+   margin: 0;
 }
-#current{
-
-    height: background-size;
-    position: relative;
-    background-color: #00b3ee;
-    margin: 0 auto;
+.fondo-jumbotrom{
+   background: #405758  ;
 }
-
-#heder{
-    height: 0%;
-}
-#content{
-    height: 65%;
-    background-color: red;
-}
-#footer{
-    height: 5%;
-    background-color: white;
-}*/
 @media (min-width: 700px){
     /*----secctions------*/
-    #current{
+     /*features*/    
+   .jumbotron h1, .jumbotron .h1 {
+    font-size: 40px;
+    text-align:left;
+   
+    }
+    .navbar-left{
+   
+    margin-left: 5px !important; 
+    }
 
-        height: 660px;
+
+    .jumbotron{
+              font-size: 10px !omportant;
+              padding: 0 ;
+              margin: 10px; 
+              height: 50px;
+              margin-left: 0px !important;
+              background: #405758  ;
+              color: white;
+             
+              }
+
+    #home{
+        min-height: 700px; 
+        height: auto;
+        max-height: 1000px;
         position: relative;
-        background-color: #00b3ee;
         margin: 0 auto;
+      /*   background:silver !important;*/
     }
-
-    #heder-current{
-        height: 0%;
-    }
-    #content-current{
-        height: 95%;
-        background-color: red;
-    }
-    #footer-current{
-        height: 5%;
-        background-color: white;
-    }
-
-    /*features*/
-    #features{
-       /* height: 660px;*/
+     #login{
+        min-height: 700px; 
+        height: auto;
+        max-height: 1000px;
         position: relative;
         margin: 0 auto;
-        background-image: url("../img/fondo-lg.jpg") !important;
-
+         /*background:green!important;*/
     }
-    #heder-login{
-        height: 0%;
+     /*features*/
+    
+    #registrar{
+        min-height: 700px; 
+        height: auto;
+        max-height: 1000px;
+        position: relative;
+        margin: 0 auto;
+        /* background:blue !important;*/
     }
-    #content-login{
-        height: 95%;
-        background-image: url("../img/fondo-lg.jpg") !important;
-    }
-    #footer-login{
-        height: 5%;
-        background-color:red;
-    }
-
+     /*features*/
+    #contacto{
+      min-height: 700px; 
+        height: auto;
+        max-height: 1000px;
+        position: relative;
+        margin: 0 auto;
+/*        background:red !important;*/
 
 
 }
 
-@media (min-width: 10px){
-    /*----secctions------*/
-    #current{
 
-        height: 660px;
-        position: relative;
-        background-color: #00b3ee;
-        margin: 0 auto;
-    }
-
-    #heder-current{
-        height: 0%;
-    }
-    #content-current{
-        height: 95%;
-        background-color: red;
-    }
-    #footer-current{
-        height: 5%;
-        background-color: white;
-    }
-
-    /*features*/
-    #features{
-        height: 660px;
-        position: relative;
-        margin: 0 auto;
-        background-image: url("../img/fondo-lg.jpg") !important;
-
-    }
-    #heder-login{
-        height: 0%;
-    }
-    #content-login{
-        height: 95%;
-        background-image: url("../img/fondo-lg.jpg") !important;
-    }
-    #footer-login{
-        height: 6%;
-        background-color:#004D40;
-        color: white;
-        text-align: center;
-    }
-
-
-
-
-}
-#footer-login {
+/*pie de pagina*/
+.centarcontenido{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -321,7 +276,7 @@ body > section,
 }
 
 
-/*prueba*/
+/*---------------inicio alinear iconos a imput text-----------------------*/
 .glyphico {
    margin-right: 5px;
     margin-left: 5px;
@@ -346,10 +301,23 @@ body > section,
 /* add padding  */
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+/*---------------fin-----------------------*/
 
+/*iconos-social*/
+.iconos-social{ 
+ text-align: right !important; margin-top: -27px; margin-right: 5%;
+ font-size: 20px;
+}
+.margen-social{ margin-right: 20px; }
 
+.centrarCaja{
+    margin-top: 13%;
+}
+.logomenu{
+    font-size: 25px;
+}
 
-
+ 
 
 
 

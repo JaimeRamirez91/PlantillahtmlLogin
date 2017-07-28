@@ -16,6 +16,8 @@
 
     <!-- CSS
     ================================================== -->
+    <!-- Fontawesome Icon moom -->
+    <link rel="stylesheet" href="fonts/style.css">
     <!-- Fontawesome Icon font -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Twitter Bootstrap css -->
@@ -35,50 +37,57 @@
     <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
     <!-- Modernizer Script for old Browsers -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <script>
-        function tamano(){
-            document.getElementById('ancho').style.display='block'
-            document.getElementById('ancho').innerHTML=window.innerWidth.toString();
-        }
-    </script>
+    
 
 </head>
 
-<body id="body" ">
-
-
+<body id="body">
+<div class="navbar-fixed-top fondo-jumbotrom">
+    
+    <div  id="jumbotron" class="jumbotron ">
+      
+      <div class="container">
+          <h1>JarvSystems</h1>       
+      </div>
+      <div class="iconos-social">
+         <a href="https://www.facebook.com/jv76383757" class="margen-social"> <samp  href="" class="icon-facebook"/></a>
+         <a href="https://www.github.com/jaimeramirez14611" class="margen-social"> <samp   class="icon-github"/></a>
+         <a href="https://twitter.com/jaimeramirez141" class="margen-social"> <samp   class="icon-twitter"/></a>
+      </div>
+         
+    </div>
 <!--
 Fixed Navigation
 ==================================== -->
-<header id="navigation" class="navbar-fixed-top navbar">
+<header id="navigation" class="navbar">
     <div class="container">
         <div class="navbar-header">
             <!-- responsive nav button -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars fa-2x"></i>
-            </button>
-            <!-- /responsive nav button -->
 
-            <!-- logo -->
-            <a class="navbar-brand" href="#body">
-                <h1 id="logo">
-                    <!-- im tag line es parte del logo -->
-                    <img src="img/logo.png" alt="Brandi">
-                </h1>
-            </a>
-            <!-- /logo -->
+            </button>
+
+              <a class="navbar-brand logomenu"  href="#"  ><span class="icon-tv"></span></a>
+            <!-- /responsive nav button -->
         </div>
 
+        
         <!-- main nav -->
-        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+        <nav class="collapse navbar-collapse navbar-left " role="navigation">
             <ul id="nav" class="nav navbar-nav">
-
-                <li class="current active " ><a href="#current">
+                
+                <li id="lihome" class="active " ><a id="ahome" href="#">
                     <Span class="glyphicon glyphicon-home"></Span> Biembenida</a>
-                <li><a href="#features"> <Span class="glyphicon glyphicon-user"> </Span> Login</a></li>
-                <li><a href="#works"><Span class="glyphicon glyphicon-plus-sign"></span></span> Registrar</a></li>
-                <li><a href="#team"><span class="glyphicon glyphicon-briefcase"></span> Contacto</a></li>
+                </li>
+                
+                <li id="lilogin" ><a id="alogin" href="#login"> <Span class="glyphicon glyphicon-user"> </Span> Login</a></li>
+                
+                <li id="liregistrar"> <a id="aregistrar" href="#registrar"><Span class="glyphicon glyphicon-plus-sign"></span></span> Registrar</a></li>
+                
+                <li id="licontacto" ><a id="acontacto" href="#contacto"><span class="glyphicon glyphicon-briefcase"></span> Contacto</a></li>
+               
             </ul>
         </nav>
         <!-- /main nav -->
@@ -90,12 +99,14 @@ End Fixed Navigation
 ==================================== -->
 
 
+</div>
+
 
 <!--
 Home Slider
 ==================================== -->
 
-<div id="current" class="current"  onresize="tamano();">
+<section id="home">
     <heder id="heder-current">
 
     </heder>
@@ -106,7 +117,7 @@ Home Slider
 
     </footer>
 
-</div>
+</section>
 
 <!-- end service item -->
 
@@ -119,8 +130,9 @@ End Home SliderEnd
 Features
 ==================================== -->
 
-<div id="features" class="features" ">
-    <heder id="heder-login">
+<section id="login">
+
+<heder id="heder-login">
 
     </heder>
     <section id="content-login">
@@ -131,7 +143,7 @@ Features
                <div class="col-lg-4 col-md-4 col-xs-8 centrarCaja">
                     <div class="panel panel-default">
                         <div id="panel-login" class="panel-heading">
-                            <h3 class="panel-title">Inicio de Sesiòn</h3>
+                            <h3 class="panel-title"><span class="icon-user" style="font-size: 50px;"></span></h3>
                         </div>
                         <div class="panel-body">
                             <form accept-charset="UTF-8" role="form">
@@ -166,12 +178,9 @@ Features
         </div>
 
     </section >
-    <footer id="footer-login">
 
-        <a id="pietxt"  href="https://www.github.com/jaimeramirez14611">Derechos reservados a Ing. Jaime Ramirez. 2017.</a>
-    </footer>
 
-</div>
+</section>
 
 <!--
 End Features
@@ -182,7 +191,7 @@ End Features
 Our Works
 ==================================== -->
 
-<section id="works" class="works clearfix" style="min-height: 1000px; background-color: white;">
+<section id="registrar" >
 
 
 
@@ -197,7 +206,7 @@ End Our Works
 Meet Our Team
 ==================================== -->
 
-<section id="team" class="team" style="min-height: 1000px; background-color:whitesmoke;">
+<section id="contacto">
 
 </section>
 
@@ -213,6 +222,16 @@ Meet Our Team
 <script src="js/bootstrap.min.js"></script>
 <!-- jquery easing -->
 <script src="js/jquery.easing.min.js"></script>
+
+<!-- Funcion jumbotrom y menu-->
+<script >
+      
+       $("#lihome #ahome").click(function(){
+       $('body,html').animate({scrollTop : 0}, 1500);
+       return false;
+})();
+
+</script>
 
 <!-- animacion scroll -->
 <script>
@@ -232,27 +251,11 @@ Meet Our Team
             }
         });
     });
-
 </script>
 
 
-<!-- Animacion inicio-->
-
-<script>
-    var wow = new WOW ({
-            boxClass:     'wow',      // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset:       120,          // distance to the element when triggering the animation (default is 0)
-            mobile:       false,       // trigger animations on mobile devices (default is true)
-            live:         true        // act on asynchronously loaded content (default is true)
-        }
-    );
-    wow.init();
-</script>
 <!-- Custom Functions -->
 <script src="js/custom.js"></script>
-
-
 
 </body>
 </html>
